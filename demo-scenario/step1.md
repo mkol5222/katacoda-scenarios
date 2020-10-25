@@ -41,5 +41,7 @@ Deploy CloudGuard agent
 
 Check status
 
-`kubectl get all -n checkpoint`
+`kubectl get all -n checkpoint`{{execute}}
 
+Check Dome9 agent logs
+`kubectl logs deployment.apps/cp-resource-management -n checkpoint`{{execute}}
