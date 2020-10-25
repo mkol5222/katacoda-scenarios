@@ -3,7 +3,7 @@
 
 Start your cluster first
 
-`minikube --start`{{execute}}
+`minikube start`{{execute}}
 
 Ready?
 
