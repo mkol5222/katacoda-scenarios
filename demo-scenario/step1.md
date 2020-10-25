@@ -1,16 +1,19 @@
-This is your first step.
 
-## Task
+## minikube cluster - Dome9 on-boarding
 
-This is an _example_ of creating a scenario and running a **command**
+Start your cluster first
 
-`echo 'Hello World'`{{execute}}
+`minikube --start`{{execute}}
+
+Ready?
+
+`kubectl get nodes`{{execute}}
 
 
-Bring your own secrets
-`export D9KEY=xxx`{{execute}}
-`export D9SECRET=xxx`{{execute}}
-`export D9CLUSTER=xxx`{{execute}}
+Bring your own secrets (remember to change xxx for real values)
+* `export D9KEY=xxx`{{execute}}
+* `export D9SECRET=xxx`{{execute}}
+* `export D9CLUSTER=xxx`{{execute}}
 
 Run the following command (only for new namespace)
 
@@ -22,7 +25,7 @@ Create a CloudGuard token or use an existing one and add to your cluster secrets
 
 Create a configmap to hold the clusterID
 
-`kubectl create configmap cp-resource-management-configmap --from-literal=cluster.id=${D9CLUSTER} --namespace checkpointz`{{execute}}
+`kubectl create configmap cp-resource-management-configmap --from-literal=cluster.id=${D9CLUSTER} --namespace checkpoint`{{execute}}
 
 Run the following commands
 
@@ -35,3 +38,8 @@ Run the following commands
 Deploy CloudGuard agent
 
 `kubectl create -f https://secure.dome9.com/v2/assets/files/cp-resource-management.yaml --namespace checkpoint`{{execute}}
+
+Check status
+
+`kubectl get all -n checkpoint`
+
