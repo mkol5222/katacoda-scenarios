@@ -13,3 +13,5 @@ Check status by listing all objects of our Dome9 agent app
 
 Check Dome9 agent logs document (hopefully) successful communication with both Kubernetes API and Dome9 portal
 `kubectl logs deployment.apps/cp-resource-management -n checkpoint`{{execute}}
+
+Your cluster is now sucessfully on-boarded. Continue in Dome9 portal.
