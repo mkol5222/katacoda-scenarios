@@ -1,0 +1,51 @@
+{
+  "title": "Dome9 Kubernetes on-boarding",
+  "description": "guide to architecture and steps of Kubernetes on-boarding to Check Point's Cloud Guard Dome9",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - start your minikube cluster",
+      "text": "step1.md"
+    },
+    {
+      "title": "Step 2 - Dome 9 API key",
+      "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Start On-Boarding and extract cluster.id",
+      "text": "step3.md"
+    },
+    {
+      "title": "Step 4 - Create checkpoint Kubernates namespace",
+      "text": "step4.md"
+    },
+    {
+      "title": "Step 5 - Dome9 API connection parameters",
+      "text": "step5.md"
+    },
+    {
+      "title": "Step 6 -  Dome9 agent permissions for Kubernetes cluster",
+      "text": "step6.md"
+    },
+    {
+      "title": "Step 7 - Dome9 agent deployment",
+      "text": "step7.md"
+    }
+  ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Ubuntu 18.04 Terminal with minikube.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
