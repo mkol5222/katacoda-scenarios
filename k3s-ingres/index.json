@@ -4,6 +4,11 @@
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "~/"}
+      ]
+    },
     "steps": [
       {
         "title": "Step 1 - Start Server",
@@ -34,11 +39,7 @@
       "text": "finish.md"
     }
   },
-  "assets": {
-    "host01": [
-      {"file": "*", "target": "~/"}
-    ]
-  },
+
   "environment": {
     "uilayout": "terminal"
   },
