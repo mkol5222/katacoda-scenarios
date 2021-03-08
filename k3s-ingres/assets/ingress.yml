@@ -1,0 +1,19 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: "ingress-test"
+  namespace: default
+
+spec:
+  rules:
+    - host: example.net
+      http:
+        paths:
+          - path: /http
+            backend:
+              serviceName: service-http
+              servicePort: 8081
+          - path: /
+            backend:
+              serviceName: service-nginx
+              servicePort: 8082

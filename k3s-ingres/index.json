@@ -2,7 +2,7 @@
   "title": "Extended Ben Hall's k3s - 5 less than k8s",
   "description": "Lightweight Kubernetes",
   "difficulty": "Beginner",
-  "time": "15 minutes",
+  "time": "60 minutes",
   "details": {
     "assets": {
       "host01": [
@@ -29,6 +29,10 @@
       {
         "title": "Step 5 - sysdig",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - Ingress",
+        "text": "step6.md"
       }
     ],
     "intro": {
