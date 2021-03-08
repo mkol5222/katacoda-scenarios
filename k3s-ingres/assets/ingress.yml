@@ -13,7 +13,7 @@ spec:
             backend:
               serviceName: service-http
               servicePort: 8081
-          - path: /
+          - path: /nginx
             backend:
               serviceName: service-nginx
               servicePort: 8082
