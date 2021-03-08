@@ -20,4 +20,7 @@ One more app
 
 
 Try (check correct external IP 172.17.0.X abobe)
-`curl -H "Host: example.com" 172.17.0.27/http`{{execute T3}}
+`curl -H "Host: example.net" 172.17.0.27/http`{{execute T3}}
+`curl -H "Host: example.net" 172.17.0.27/nginx`{{execute T3}}
+
+Notice nginx is responsing, but path prefixed /nginx does not exist on the server.
