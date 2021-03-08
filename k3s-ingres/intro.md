@@ -1,0 +1,3 @@
+In this scenario you will learn about [k3s](https://github.com/rancher/k3s), K3s is a new lightweight Kubernetes distribution prototype from Rancher designed to be easy to install, half the memory, all in a binary less than 40mb.
+
+EXTENDED for experiments with Ingress based on Traefik 3/2021
