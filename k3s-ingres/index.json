@@ -20,6 +20,10 @@
       {
         "title": "Step 4 - Services",
         "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - sysdig",
+        "text": "step5.md"
       }
     ],
     "intro": {

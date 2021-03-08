@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-kuard
+spec:
+  ports:
+  - port: 8082
+    protocol: TCP
+    targetPort: 8080
+    nodePort: 30082
+  selector:
+    app: kuard
+  type: LoadBalancer
