@@ -1,21 +1,23 @@
 Ingress
 
-`cat ingress.yml`{{execute T4}}
+`cat ingress.yml`{{execute T3}}
 
 Apply
 
-`kubectl apply -f ingress.yml`{{execute T4}}
+`k3s kubectl apply -f ingress.yml`{{execute T3}}
 
 Check 
 
-`kubectl describe ingress`{{execute T4}}
+`k3s kubectl describe ingress`{{execute T3}}
 
 One more app
 
-`kubectl create deployment nginx --image=nginx`{{execute T4}}
-`cat svc-nginx.yml`{{execute T4}
-`kubectl apply -f svc-nginx.yml`{{execute T4}}
-`kubectl get svc`{{execute T4}}
+`k3s kubectl create deployment nginx --image=nginx`{{execute T3}}
+`cat svc-nginx.yml`{{execute T3}}
+`k3s kubectl apply -f svc-nginx.yml`{{execute T3}}
+`k3s kubectl get pod -o wide`{{execute T3}}
+`k3s kubectl get svc`{{execute T3}}
+
 
 Try (check correct external IP 172.17.0.X abobe)
-`curl -H "Host: example.com" 172.17.0.27/http`{{execute T4}}
+`curl -H "Host: example.com" 172.17.0.27/http`{{execute T3}}
