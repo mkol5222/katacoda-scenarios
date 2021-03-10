@@ -5,8 +5,11 @@
     "details": {
         "steps": [
             {
-                "title": "",
+                "title": "SourceGuard",
                 "text": "step1.md"
+            },{
+                "title": "Container scanning",
+                "text": "step2.md"
             }
         ]
     },
