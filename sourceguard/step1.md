@@ -13,7 +13,7 @@ Initiate scan
 `docker run -ti --rm -v $(pwd)/src:/src -e SG_CLIENT_ID=$SG_CLIENT_ID -e SG_SECRET_KEY=$SG_SECRET_KEY checkpoint/shiftleft shiftleft  code-scan -s /src --json > scan.json`{{execute T1}}
 
 Inspect scan.json
-`cat scan.json | head`{{execute T1}}
+`cat scan.json | grep ^\{ | jq . | head`{{execute T1}}
 
 And visit Infinity Portal for SourceGuard report.
 

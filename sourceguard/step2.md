@@ -11,4 +11,7 @@ We need other set of credentials from CloudGuard portal
 `export CGKEY=your-key; export CGSEC=your-secret`{{execute T1}}
 
 Scan now
-`docker run -ti --rm -v $(pwd)/debian_stretch-20191224.tar:/img/debian_stretch-20191224.tar -e CHKP_CLOUDGUARD_ID=$CGKEY -e CHKP_CLOUDGUARD_SECRET=$CGSEC checkpoint/shiftleft shiftleft  image-scan -t 900 -i /img/debian_stretch-20191224.tar`{{execute T1}}
+`docker run -ti --rm -v $(pwd)/debian_stretch-20191224.tar:/img/debian_stretch-20191224.tar -e CHKP_CLOUDGUARD_ID=$CGKEY -e CHKP_CLOUDGUARD_SECRET=$CGSEC checkpoint/shiftleft shiftleft  image-scan -t 900 -i /img/debian_stretch-20191224.tar -j > scan.json`{{execute T1}}
+
+Inspect result
+`cat scan.json | grep ^\{ | jq . | head`{{execute T1}}
