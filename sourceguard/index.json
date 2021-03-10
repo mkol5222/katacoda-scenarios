@@ -1,7 +1,7 @@
 {
     "noindex": true,
-    "title": "SourceGuard demo",
-    "description": "Learn how to add the Visualise Tab",
+    "title": "SourceGuard and container scan demo",
+    "description": "",
     "details": {
         "steps": [
             {
@@ -17,7 +17,7 @@
     "environment": {
         "hideintro": true, "hidefinish": true,
         
-        "showvisualise": true,
+        "showvisualise": false,
         
         "uilayout": "terminal"
     },
