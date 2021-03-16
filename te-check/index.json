@@ -1,0 +1,24 @@
+{
+    "noindex": true,
+    "title": "techeck3.go",
+    "description": "Scanning files with Threat Emulation API using sample GO client",
+    "details": {
+        "steps": [
+            {
+                "title": "Just do it",
+                "text": "step1.md"
+            }
+        ]
+    },
+    "files": [],
+    "environment": {
+        "hideintro": true, "hidefinish": true,
+        
+        "showvisualise": false,
+        
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
