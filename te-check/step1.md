@@ -12,7 +12,7 @@ Run to see instructions
 `./techeck3`{{execute}}
 
 Malware sample
-`TESTFILE="http://poc-files.threat-cloud.com/demo/demo.doc"`{{execute}}
+`TESTFILE="https://poc-files.threat-cloud.com/demo/demo.doc"`{{execute}}
 
 Query
 `./techeck3 -f ${TESTFILE} | jq .`{{execute}}
