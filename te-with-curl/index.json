@@ -1,0 +1,36 @@
+{
+    "noindex": true,
+    "title": "Threat Emulation API with curl",
+    "description": "Scanning files with Threat Emulation API from command line",
+    "details": {
+        "steps": [
+            {
+                "title": "Get file to inestigate",
+                "text": "step1.md"
+            },
+            {
+                "title": "Bring your API key",
+                "text": "step2.md"
+            },
+            {
+                "title": "Query file",
+                "text": "step3.md"
+            },
+            {
+                "title": "Upload file",
+                "text": "step4.md"
+            }
+        ]
+    },
+    "files": [],
+    "environment": {
+        "hideintro": true, "hidefinish": true,
+        
+        "showvisualise": false,
+        
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
