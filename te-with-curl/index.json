@@ -19,6 +19,10 @@
             {
                 "title": "Upload file",
                 "text": "step4.md"
+            },
+            {
+                "title": "Downloading forensics reports",
+                "text": "step5.md"
             }
         ]
     },

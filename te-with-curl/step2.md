@@ -1,5 +1,5 @@
 
-We are going to use TE cloud emulation service. Access and quota is controlled via API key.
+We are going to use TE cloud emulation service. Access and quota is controlled by API key.
 You should get your own based on API SKU in Check Point User Center.
 
 `TEAPIKEY=TE_API_KEY_O54cnvD0G7Va3Lb2ZqnLAvt6Y9so03ywmcO32p5o`{{execute}}
