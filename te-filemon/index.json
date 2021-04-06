@@ -25,7 +25,7 @@
         
         "showvisualise": false,
         
-        "uilayout": "terminal-terminal"
+        "uilayout": "terminal"
     },
     "backend": {
         "imageid": "ubuntu"
