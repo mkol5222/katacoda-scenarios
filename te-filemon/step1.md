@@ -1,3 +1,6 @@
+Check app folder
+`find ~/app`{{execute}}
+
 Prepare app. Install dependencies
 `cd ~/app; npm i`{{execute}}
 
