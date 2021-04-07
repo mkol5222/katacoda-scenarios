@@ -1,0 +1,33 @@
+{
+    "noindex": true,
+    "title": "GIT: Filesystem monitoring - TE investigator",
+    "description": "automated uploads scan and move",
+    "details": {
+        "assets": {
+            "host01": [
+              {"file": "*", "target": "~/app"}
+            ]
+          },
+        "steps": [
+            {
+                "title": "Get ready",
+                "text": "step1.md"
+            },
+            {
+                "title": "Run",
+                "text": "step2.md"
+            }
+        ]
+    },
+    "files": [],
+    "environment": {
+        "hideintro": true, "hidefinish": true,
+        
+        "showvisualise": false,
+        
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
