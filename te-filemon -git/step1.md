@@ -4,4 +4,8 @@ Check out app source
 Start app using Docker Compose
 `cd te-filemon; docker-compose up`{{execute}}
 
+Wait to see container logs once app is fully ready.
+You should see investigator monitoring started:
+`main_1        | addDir /files/in`
+
 Open one more Terminal tab and continue.

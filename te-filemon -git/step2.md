@@ -21,13 +21,18 @@ upload 1st
 and some clean
 `put sandblast-appliances-datasheet.pdf`{{execute T2}}
 
-Exit SFTP client and watch progress at Terminal 1.
+Exit SFTP client and watch progress in Terminal 1.
 `exit`{{execute T2}}
 
-Look at quarantine
+Focus on MOVE and QUARANTINE actions in Terminal 1.
+
+Look at quarantine here:
 `curl localhost:9999`{{execute T2}}
+You should see malicous files moved to quarantine by QUARANTINE action.
+
 and at clean side
 `curl localhost:8888`{{execute T2}}
+You should see benign file moved to clean side by MOVE action.
 
 Clean side is also accessible from clean side SFTP server
 `sftp -P 3333 root@localhost:/root/files`{{execute T2}}
@@ -36,6 +41,8 @@ Password: `Vpn12345`{{execute T2}}
 
 look for datasheet
 `ls`{{execute T2}}
+
+Was sandblast-appliances-datasheet.pdf moved to clean side SFTP server?
 
 Leave STFP client
 `exit`{{execute T2}}
