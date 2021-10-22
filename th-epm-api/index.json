@@ -1,0 +1,29 @@
+{
+    "noindex": true,
+    "title": "Threat Hunting and EPMaaS API experiments",
+    "description": "Learn how to interact with TH and EPM from command-line",
+    "details": {
+        "assets": {
+            "host01": [
+              {"file": "*", "target": "~/app"}
+            ]
+          },
+        "steps": [
+            {
+                "title": "Get ready",
+                "text": "step1.md"
+            }
+        ]
+    },
+    "files": [],
+    "environment": {
+        "hideintro": true, "hidefinish": true,
+        
+        "showvisualise": false,
+        
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
