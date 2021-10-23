@@ -1,12 +1,11 @@
-Check app folder
-`find ~/app`{{execute}}
+# Install and start PowerShell
 
-Download PowerShell
+Download PowerShell Ubuntu package
 `curl -O -L https://github.com/PowerShell/PowerShell/releases/download/v7.1.5/powershell_7.1.5-1.ubuntu.16.04_amd64.deb`{{execute}}
 
-Install PowerShell
+Install PowerShell using apt
 `apt -f install -y; apt install -y liblttng-ust0; dpkg -i powershell_7.1.5-1.ubuntu.16.04_amd64.deb`{{execute}}
 
-Start PowerShell
+Go to PowerShell prompt
 `pwsh`{{execute}}
 
