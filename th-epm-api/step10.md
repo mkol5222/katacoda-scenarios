@@ -23,6 +23,11 @@ Send request
 ### Inspecting the token
 
  Look for your token
- `TOKEN=$(echo "$RESPONSE" | jq -r .data.token); echo; echo $TOKEN`{{execute}}
+ `PORTAL_TOKEN=$(echo "$RESPONSE" | jq -r .data.token); echo; echo $PORTAL_TOKEN`{{execute}}
 
  Interested in JWT contents? Copy and inspect in [JWT.IO Debugger](https://jwt.io/#debugger-io)
+
+
+### SUMMARY
+ 
+ You have valid PORTAL_TOKEN, if everything went well. This token confirms your user identity and permissions(roles).
