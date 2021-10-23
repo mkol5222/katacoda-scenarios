@@ -18,6 +18,10 @@
                 "text": "step11.md"
             },            
             {
+                "title": "List EPMaaS Computers",
+                "text": "step12.md"
+            },    
+            {
                 "title": "Install and start Powershell",
                 "text": "step20.md"               
             }

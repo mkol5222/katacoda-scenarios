@@ -1,4 +1,4 @@
-Infinity Portal AUTHORIZATION is based on JWT. JWT can be obtained via various AUTHENTICATION flows. We will cover exchanging API key for the token.
+Infinity Portal AUTHORIZATION is based on JWT. JWT can be obtained via various AUTHENTICATION flows. We are covering exchanging API key for the token in this step.
 
 
 ### Bring your own API keys
@@ -13,12 +13,14 @@ E.g.
 ### Authenticate using login API call
 
 Build request payload
-`REQUEST_PAYLOAD="{\"clientId\":\"$HEP_KEY\",\"accessKey\":\"$HEP_SECRET\"}"`{{execute}}
-`echo "$REQUEST_PAYLOAD" | jq .`{{execute}}
+`REQUEST_PAYLOAD="{\"clientId\":\"$HEP_KEY\",\"accessKey\":\"$HEP_SECRET\"}"; echo "$REQUEST_PAYLOAD" | jq .`{{execute}}
 
 Send request
 `RESPONSE=$(curl -s --data-binary "$REQUEST_PAYLOAD" -H "content-type: application/json" "https://cloudinfra-gw.portal.checkpoint.com/auth/external")`{{execute}}
+
+Check the response
 `echo "$RESPONSE" | jq .`{{execute}}
+
 
 ### Inspecting the token
 
@@ -30,4 +32,4 @@ Send request
 
 ### SUMMARY
  
- You have valid PORTAL_TOKEN, if everything went well. This token confirms your user identity and permissions(roles).
+ You have valid PORTAL_TOKEN, if everything went well. This token confirms your Infinity Portal user identity and permissions(roles).
