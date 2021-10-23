@@ -67,3 +67,23 @@ Notice how our credentials are sent in HTTP request. PORTAL_TOKEN in *Authorizat
  -H "token: $EPMAAS_TOKEN" \
  "$API_URL"); \
  echo; echo "$RESPONSE" | jq -r .`{{execute}}
+
+
+### Reading response
+
+Response part *data* contains requested information in case of succesful request. Lets focus on first *computers* entry using `jq`
+
+Section is named by our query - *computers* and it contains the list and paging control related fields.
+`echo "$RESPONSE" | jq -r '.data.computers | keys'`{{execute}}
+
+Computers is array (indexed by number)
+`echo "$RESPONSE" | jq -r '.data.computers.computers | keys'`{{execute}}
+
+Lets get first one
+`echo "$RESPONSE" | jq -r '.data.computers.computers[0]'`{{execute}}
+
+
+### SUMMARY
+
+We have all ingredients to call EPMaaS APU with both credentials (for Infinity Portal and EPMaaS server sessions).
+GraphQL schema is telling us what can be done on EPMaaS server.
