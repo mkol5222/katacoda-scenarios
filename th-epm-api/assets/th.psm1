@@ -48,12 +48,12 @@ function Get-CPTHQueryProcessNameIs ($processName) {
       pagination {
         maxResults
         pageToken
-        __typename
+        
       }
       metadata {
         totalRows
         jobId
-        __typename
+        
       }
       records {
         ... on EPRecord {
@@ -104,7 +104,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               ProcessRepMalwareTypes
               ProcessRepProtectionName
               VTLink
-              __typename
+              
             }
             ParentProcessReputationInfo {
               ReputationType
@@ -119,9 +119,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               ProcessRepMalwareTypes
               ProcessRepProtectionName
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           Process @include(if: $includeRecordProcess) {
             ProcessArgs
@@ -135,7 +135,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             ProcessLogonSession
             ParentProcessIntegrityLevel
             ParentProcessArgs
-            __typename
+            
           }
           Email @include(if: $includeRecordEmail) {
             EmailFrom
@@ -148,7 +148,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             EmailBCC
             EmailAttachments
             EmailURLs
-            __typename
+            
           }
           File @include(if: $includeRecordFile) {
             FileDir
@@ -185,9 +185,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               FileRepMalwareTypes
               FileRepProtectionName
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           Network @include(if: $includeRecordNetwork) {
             NetworkProtocol
@@ -231,7 +231,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               URLRepProtectionName
               URLRepRegistrant
               VTLink
-              __typename
+              
             }
             DomainReputationInfo {
               ReputationType
@@ -246,7 +246,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               DomainRepProtectionName
               DomainRepRegistrant
               VTLink
-              __typename
+              
             }
             DestIPReputationInfo {
               ReputationType
@@ -260,10 +260,10 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               IPRepMalwareFamily
               IPRepGeoLocation
               VTLink
-              __typename
+              
             }
             NetworkIsRemoteIpConnection
-            __typename
+            
           }
           Registry @include(if: $includeRecordRegistry) {
             RegistryKey
@@ -272,7 +272,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             RegistryOldData
             RegistryOpMask
             RegistryOp
-            __typename
+            
           }
           Inject @include(if: $includeRecordInject) {
             InjectDstPid
@@ -281,11 +281,11 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             InjectDstDir
             InjectDstName
             InjectHookOperation
-            __typename
+            
           }
           Script @include(if: $includeRecordScript) {
             ScriptData
-            __typename
+            
           }
           RemoteLogon @include(if: $includeRecordRemoteLogon) {
             RemoteAttackerMachineName
@@ -304,7 +304,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             LinkedLogonId
             UserSID
             LogonOrigin
-            __typename
+            
           }
           DetectionEvent @include(if: $includeDetectionEvent) {
             DetectionIncidentId
@@ -352,7 +352,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             DetectionEmailAttachmentName
             DetectionEmailEmbeddedURL
             DetectionEmailDateOfDelivery
-            __typename
+            
           }
           AdvancedActivity @include(if: $includeAdvancedActivity) {
             ActivityType
@@ -363,7 +363,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             ActivityTargetProcessArgs
             ActivityTargetPid
             ActivityTargetCreationTime
-            __typename
+            
           }
           IndirectExecution @include(if: $includeIndirectExecution) {
             ExecutionType
@@ -377,7 +377,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             ExecutionRemoteSourceMachine
             ExecutionRemoteTargetUserName
             ExecutionRemoteTargetUserDomain
-            __typename
+            
           }
           RemoteExecution @include(if: $includeRemoteExecution) {
             RemoteExecutionSourceIpAddress
@@ -390,27 +390,27 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             RemoteExecutionUserSID
             RemoteExecutionLogonId
             RemoteExecutionType
-            __typename
+            
           }
           MitreInfo @include(if: $includeMitre) {
             tacticID
             tacticName
             techniqueID
             techniqueName
-            __typename
+            
           }
           ShadowITInfo @include(if: $includeShadowIT) {
             applicationName
             categoryName
             subCategoryName
-            __typename
+            
           }
           AggregationResults {
             aggregationName
             aggregateResult
-            __typename
+            
           }
-          __typename
+          
         }
         ... on GWStatsRecord @include(if: $includeGWStats) {
           DataSource
@@ -424,7 +424,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             RecordType
             OpTimeUTC
             GatewayName
-            __typename
+            
           }
           Network {
             NetworkType
@@ -454,7 +454,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               URLRepProtectionName
               URLRepRegistrant
               VTLink
-              __typename
+              
             }
             DomainReputationInfo {
               ReputationType
@@ -469,7 +469,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               DomainRepProtectionName
               DomainRepRegistrant
               VTLink
-              __typename
+              
             }
             DestIPReputationInfo {
               ReputationType
@@ -483,9 +483,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               IPRepMalwareFamily
               IPRepGeoLocation
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           File @include(if: $includeRecordFile) {
             FileName
@@ -504,9 +504,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               FileRepMalwareTypes
               FileRepProtectionName
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           DetectionEvent @include(if: $includeDetectionEvent) {
             DetectionAttackStatus
@@ -524,22 +524,22 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             DetectionConnectionCount
             DetectionRemediationPolicy
             DetectionDescription
-            __typename
+            
           }
           MitreInfo @include(if: $includeMitre) {
             tacticID
             tacticName
             techniqueID
             techniqueName
-            __typename
+            
           }
           ShadowITInfo @include(if: $includeShadowIT) {
             applicationName
             categoryName
             subCategoryName
-            __typename
+            
           }
-          __typename
+          
         }
         ... on LAASRecord @include(if: $includeLAAS) {
           DataSource
@@ -560,7 +560,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             GatewayPolicyRuleName
             GatewayPolicyRuleNumber
             GatewayPolicyRuleAction
-            __typename
+            
           }
           Network {
             NetworkType
@@ -591,7 +591,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               URLRepProtectionName
               URLRepRegistrant
               VTLink
-              __typename
+              
             }
             DomainReputationInfo {
               ReputationType
@@ -606,7 +606,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               DomainRepProtectionName
               DomainRepRegistrant
               VTLink
-              __typename
+              
             }
             DestIPReputationInfo {
               ReputationType
@@ -620,9 +620,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               IPRepMalwareFamily
               IPRepGeoLocation
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           File @include(if: $includeRecordFile) {
             FileName
@@ -641,9 +641,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               FileRepMalwareTypes
               FileRepProtectionName
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           DetectionEvent @include(if: $includeDetectionEvent) {
             DetectionAttackStatus
@@ -662,22 +662,22 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             DetectionRemediationPolicy
             DetectionDescription
             DetectionSuppressedLogs
-            __typename
+            
           }
           MitreInfo @include(if: $includeMitre) {
             tacticID
             tacticName
             techniqueID
             techniqueName
-            __typename
+            
           }
           ShadowITInfo @include(if: $includeShadowIT) {
             applicationName
             categoryName
             subCategoryName
-            __typename
+            
           }
-          __typename
+          
         }
         ... on MTARecord @include(if: $includeMTA) {
           DataSource
@@ -693,7 +693,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             HostType
             MachineName
             UserName
-            __typename
+            
           }
           DetectionEvent @include(if: $includeDetectionEvent) {
             DetectionEventType
@@ -718,7 +718,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             DetectionEmailAttachmentName
             DetectionEmailDateOfDelivery
             DetectionMaliciousPath
-            __typename
+            
           }
           File @include(if: $includeRecordFile) {
             FileName
@@ -740,9 +740,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               FileRepMalwareTypes
               FileRepProtectionName
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           Network @include(if: $includeRecordNetwork) {
             NetworkSrcIP
@@ -763,7 +763,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               URLRepProtectionName
               URLRepRegistrant
               VTLink
-              __typename
+              
             }
             DomainReputationInfo {
               ReputationType
@@ -778,7 +778,7 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               DomainRepProtectionName
               DomainRepRegistrant
               VTLink
-              __typename
+              
             }
             DestIPReputationInfo {
               ReputationType
@@ -792,9 +792,9 @@ function Get-CPTHQueryProcessNameIs ($processName) {
               IPRepMalwareFamily
               IPRepGeoLocation
               VTLink
-              __typename
+              
             }
-            __typename
+            
           }
           Email {
             EmailRule
@@ -816,13 +816,13 @@ function Get-CPTHQueryProcessNameIs ($processName) {
             EmailSourceCountry
             EmailInspectionType
             EmailConfidence
-            __typename
+            
           }
-          __typename
+          
         }
-        __typename
+        
       }
-      __typename
+      
     }
   }
       
@@ -907,12 +907,12 @@ function Get-CPTHDetectionEvents {
           pagination {
             maxResults
             pageToken
-            __typename
+            
           }
           metadata {
             totalRows
             jobId
-            __typename
+            
           }
           records {
             ... on EPRecord {
@@ -963,7 +963,7 @@ function Get-CPTHDetectionEvents {
                   ProcessRepMalwareTypes
                   ProcessRepProtectionName
                   VTLink
-                  __typename
+                  
                 }
                 ParentProcessReputationInfo {
                   ReputationType
@@ -978,9 +978,9 @@ function Get-CPTHDetectionEvents {
                   ProcessRepMalwareTypes
                   ProcessRepProtectionName
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               Process @include(if: $includeRecordProcess) {
                 ProcessArgs
@@ -994,7 +994,7 @@ function Get-CPTHDetectionEvents {
                 ProcessLogonSession
                 ParentProcessIntegrityLevel
                 ParentProcessArgs
-                __typename
+                
               }
               Email @include(if: $includeRecordEmail) {
                 EmailFrom
@@ -1007,7 +1007,7 @@ function Get-CPTHDetectionEvents {
                 EmailBCC
                 EmailAttachments
                 EmailURLs
-                __typename
+                
               }
               File @include(if: $includeRecordFile) {
                 FileDir
@@ -1044,9 +1044,9 @@ function Get-CPTHDetectionEvents {
                   FileRepMalwareTypes
                   FileRepProtectionName
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               Network @include(if: $includeRecordNetwork) {
                 NetworkProtocol
@@ -1090,7 +1090,7 @@ function Get-CPTHDetectionEvents {
                   URLRepProtectionName
                   URLRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DomainReputationInfo {
                   ReputationType
@@ -1105,7 +1105,7 @@ function Get-CPTHDetectionEvents {
                   DomainRepProtectionName
                   DomainRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DestIPReputationInfo {
                   ReputationType
@@ -1119,10 +1119,10 @@ function Get-CPTHDetectionEvents {
                   IPRepMalwareFamily
                   IPRepGeoLocation
                   VTLink
-                  __typename
+                  
                 }
                 NetworkIsRemoteIpConnection
-                __typename
+                
               }
               Registry @include(if: $includeRecordRegistry) {
                 RegistryKey
@@ -1131,7 +1131,7 @@ function Get-CPTHDetectionEvents {
                 RegistryOldData
                 RegistryOpMask
                 RegistryOp
-                __typename
+                
               }
               Inject @include(if: $includeRecordInject) {
                 InjectDstPid
@@ -1140,11 +1140,11 @@ function Get-CPTHDetectionEvents {
                 InjectDstDir
                 InjectDstName
                 InjectHookOperation
-                __typename
+                
               }
               Script @include(if: $includeRecordScript) {
                 ScriptData
-                __typename
+                
               }
               RemoteLogon @include(if: $includeRecordRemoteLogon) {
                 RemoteAttackerMachineName
@@ -1163,7 +1163,7 @@ function Get-CPTHDetectionEvents {
                 LinkedLogonId
                 UserSID
                 LogonOrigin
-                __typename
+                
               }
               DetectionEvent @include(if: $includeDetectionEvent) {
                 DetectionIncidentId
@@ -1211,7 +1211,7 @@ function Get-CPTHDetectionEvents {
                 DetectionEmailAttachmentName
                 DetectionEmailEmbeddedURL
                 DetectionEmailDateOfDelivery
-                __typename
+                
               }
               AdvancedActivity @include(if: $includeAdvancedActivity) {
                 ActivityType
@@ -1222,7 +1222,7 @@ function Get-CPTHDetectionEvents {
                 ActivityTargetProcessArgs
                 ActivityTargetPid
                 ActivityTargetCreationTime
-                __typename
+                
               }
               IndirectExecution @include(if: $includeIndirectExecution) {
                 ExecutionType
@@ -1236,7 +1236,7 @@ function Get-CPTHDetectionEvents {
                 ExecutionRemoteSourceMachine
                 ExecutionRemoteTargetUserName
                 ExecutionRemoteTargetUserDomain
-                __typename
+                
               }
               RemoteExecution @include(if: $includeRemoteExecution) {
                 RemoteExecutionSourceIpAddress
@@ -1249,27 +1249,27 @@ function Get-CPTHDetectionEvents {
                 RemoteExecutionUserSID
                 RemoteExecutionLogonId
                 RemoteExecutionType
-                __typename
+                
               }
               MitreInfo @include(if: $includeMitre) {
                 tacticID
                 tacticName
                 techniqueID
                 techniqueName
-                __typename
+                
               }
               ShadowITInfo @include(if: $includeShadowIT) {
                 applicationName
                 categoryName
                 subCategoryName
-                __typename
+                
               }
               AggregationResults {
                 aggregationName
                 aggregateResult
-                __typename
+                
               }
-              __typename
+              
             }
             ... on GWStatsRecord @include(if: $includeGWStats) {
               DataSource
@@ -1283,7 +1283,7 @@ function Get-CPTHDetectionEvents {
                 RecordType
                 OpTimeUTC
                 GatewayName
-                __typename
+                
               }
               Network {
                 NetworkType
@@ -1313,7 +1313,7 @@ function Get-CPTHDetectionEvents {
                   URLRepProtectionName
                   URLRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DomainReputationInfo {
                   ReputationType
@@ -1328,7 +1328,7 @@ function Get-CPTHDetectionEvents {
                   DomainRepProtectionName
                   DomainRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DestIPReputationInfo {
                   ReputationType
@@ -1342,9 +1342,9 @@ function Get-CPTHDetectionEvents {
                   IPRepMalwareFamily
                   IPRepGeoLocation
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               File @include(if: $includeRecordFile) {
                 FileName
@@ -1363,9 +1363,9 @@ function Get-CPTHDetectionEvents {
                   FileRepMalwareTypes
                   FileRepProtectionName
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               DetectionEvent @include(if: $includeDetectionEvent) {
                 DetectionAttackStatus
@@ -1383,22 +1383,22 @@ function Get-CPTHDetectionEvents {
                 DetectionConnectionCount
                 DetectionRemediationPolicy
                 DetectionDescription
-                __typename
+                
               }
               MitreInfo @include(if: $includeMitre) {
                 tacticID
                 tacticName
                 techniqueID
                 techniqueName
-                __typename
+                
               }
               ShadowITInfo @include(if: $includeShadowIT) {
                 applicationName
                 categoryName
                 subCategoryName
-                __typename
+                
               }
-              __typename
+              
             }
             ... on LAASRecord @include(if: $includeLAAS) {
               DataSource
@@ -1419,7 +1419,7 @@ function Get-CPTHDetectionEvents {
                 GatewayPolicyRuleName
                 GatewayPolicyRuleNumber
                 GatewayPolicyRuleAction
-                __typename
+                
               }
               Network {
                 NetworkType
@@ -1450,7 +1450,7 @@ function Get-CPTHDetectionEvents {
                   URLRepProtectionName
                   URLRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DomainReputationInfo {
                   ReputationType
@@ -1465,7 +1465,7 @@ function Get-CPTHDetectionEvents {
                   DomainRepProtectionName
                   DomainRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DestIPReputationInfo {
                   ReputationType
@@ -1479,9 +1479,9 @@ function Get-CPTHDetectionEvents {
                   IPRepMalwareFamily
                   IPRepGeoLocation
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               File @include(if: $includeRecordFile) {
                 FileName
@@ -1500,9 +1500,9 @@ function Get-CPTHDetectionEvents {
                   FileRepMalwareTypes
                   FileRepProtectionName
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               DetectionEvent @include(if: $includeDetectionEvent) {
                 DetectionAttackStatus
@@ -1521,22 +1521,22 @@ function Get-CPTHDetectionEvents {
                 DetectionRemediationPolicy
                 DetectionDescription
                 DetectionSuppressedLogs
-                __typename
+                
               }
               MitreInfo @include(if: $includeMitre) {
                 tacticID
                 tacticName
                 techniqueID
                 techniqueName
-                __typename
+                
               }
               ShadowITInfo @include(if: $includeShadowIT) {
                 applicationName
                 categoryName
                 subCategoryName
-                __typename
+                
               }
-              __typename
+              
             }
             ... on MTARecord @include(if: $includeMTA) {
               DataSource
@@ -1552,7 +1552,7 @@ function Get-CPTHDetectionEvents {
                 HostType
                 MachineName
                 UserName
-                __typename
+                
               }
               DetectionEvent @include(if: $includeDetectionEvent) {
                 DetectionEventType
@@ -1577,7 +1577,7 @@ function Get-CPTHDetectionEvents {
                 DetectionEmailAttachmentName
                 DetectionEmailDateOfDelivery
                 DetectionMaliciousPath
-                __typename
+                
               }
               File @include(if: $includeRecordFile) {
                 FileName
@@ -1599,9 +1599,9 @@ function Get-CPTHDetectionEvents {
                   FileRepMalwareTypes
                   FileRepProtectionName
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               Network @include(if: $includeRecordNetwork) {
                 NetworkSrcIP
@@ -1622,7 +1622,7 @@ function Get-CPTHDetectionEvents {
                   URLRepProtectionName
                   URLRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DomainReputationInfo {
                   ReputationType
@@ -1637,7 +1637,7 @@ function Get-CPTHDetectionEvents {
                   DomainRepProtectionName
                   DomainRepRegistrant
                   VTLink
-                  __typename
+                  
                 }
                 DestIPReputationInfo {
                   ReputationType
@@ -1651,9 +1651,9 @@ function Get-CPTHDetectionEvents {
                   IPRepMalwareFamily
                   IPRepGeoLocation
                   VTLink
-                  __typename
+                  
                 }
-                __typename
+                
               }
               Email {
                 EmailRule
@@ -1675,13 +1675,13 @@ function Get-CPTHDetectionEvents {
                 EmailSourceCountry
                 EmailInspectionType
                 EmailConfidence
-                __typename
+                
               }
-              __typename
+              
             }
-            __typename
+            
           }
-          __typename
+          
         }
       }      
 '@
