@@ -25,9 +25,7 @@ Lets declare function to login into Threat Hunting using API key. It is storing 
         clientId  = $key;
         accessKey = $secret
     } | ConvertTo-Json
-    $res = Invoke-RestMethod -Uri "https://cloudinfra-gw.portal.checkpoint.com/auth/external" `
-        -Headers @{"Content-Type" = "application/json" } `
-        -Body $body -Method Post
+    $res = Invoke-RestMethod -Uri "https://cloudinfra-gw.portal.checkpoint.com/auth/external" -Headers @{"Content-Type" = "application/json" } -Body $body -Method Post
     $Script:cpPortalToken = $res.data.token
     return $Script:cpPortalToken
 }`{{execute}}

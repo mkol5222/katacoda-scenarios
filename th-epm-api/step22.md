@@ -11,11 +11,7 @@
         'Authorization' = "Bearer $Script:cpPortalToken"
     }
 
-    $res = Invoke-RestMethod `
-        -Uri "https://cloudinfra-gw.portal.checkpoint.com/app/threathunting/prod-gcp-apollo/" `
-        -Body $body `
-        -Headers $headers `
-        -Method Post
+    $res = Invoke-RestMethod -Uri "https://cloudinfra-gw.portal.checkpoint.com/app/threathunting/prod-gcp-apollo/" -Body $body -Headers $headers -Method Post
     
     return $res.data
 }`{{execute}}

@@ -28,6 +28,10 @@
             {
                 "title": "Threat Hunting API with PowerShell",
                 "text": "step21.md"               
+            },
+            {
+                "title": "Using Threat Hunting API",
+                "text": "step22.md"               
             }            
         ]
     },
