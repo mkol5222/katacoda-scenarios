@@ -24,7 +24,11 @@
             {
                 "title": "Install and start Powershell",
                 "text": "step20.md"               
-            }
+            },
+            {
+                "title": "Threat Hunting API with PowerShell",
+                "text": "step21.md"               
+            }            
         ]
     },
     "files": [],

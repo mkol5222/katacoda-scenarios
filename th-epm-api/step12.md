@@ -85,5 +85,6 @@ Lets get first one
 
 ### SUMMARY
 
-We have all ingredients to call EPMaaS APU with both credentials (for Infinity Portal and EPMaaS server sessions).
+We have all ingredients to call EPMaaS API using both credentials (for Infinity Portal and EPMaaS server sessions) in our hands.
+
 GraphQL schema is telling us what can be done on EPMaaS server.
