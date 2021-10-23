@@ -10,8 +10,12 @@
           },
         "steps": [
             {
-                "title": "Get ready",
-                "text": "step1.md"
+                "title": "Infinity Portal Authentication",
+                "text": "step10.md"
+            },
+            {
+                "title": "Install and start Powershell",
+                "text": "step20.md"               
             }
         ]
     },
