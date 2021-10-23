@@ -1,5 +1,3 @@
-## Infinity Portal Authentication
-
 Infinity Portal AUTHORIZATION is based on JWT. JWT can be obtained via various AUTHENTICATION flows. We will cover exchanging API key for the token.
 
 
@@ -16,14 +14,15 @@ E.g.
 
 Build request payload
 `REQUEST_PAYLOAD="{\"clientId\":\"$HEP_KEY\",\"accessKey\":\"$HEP_SECRET\"}"`{{execute}}
+`echo "$REQUEST_PAYLOAD" | jq .`{{execute}}
 
 Send request
 `RESPONSE=$(curl -s --data-binary "$REQUEST_PAYLOAD" -H "content-type: application/json" "https://cloudinfra-gw.portal.checkpoint.com/auth/external")`{{execute}}
-
+`echo "$RESPONSE" | jq .`{{execute}}
 
 ### Inspecting the token
 
  Look for your token
- `TOKEN=$(echo "$RESPONSE" | jq -r .data.token); echo $TOKEN`{{execute}}
+ `TOKEN=$(echo "$RESPONSE" | jq -r .data.token); echo; echo $TOKEN`{{execute}}
 
  Interested in JWT contents? Copy and inspect in [JWT.IO Debugger](https://jwt.io/#debugger-io)
