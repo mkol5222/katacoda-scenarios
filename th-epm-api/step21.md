@@ -13,7 +13,7 @@ Make sure you finished previous step and you are in PowerShell prompt.
 
 Use your own API keys obtained in Infinity Portal - Global Settings - API Keys - make sure to choose Harmony Threat Hunting as Harmony Endpoint keys are not good for this API service.
 
-`$thKey = "e8f3e30f8bcc42b-bring-your-own"; $thSecret = "348d7579d3824ed79cb41-secrets"`{{execute}}
+`$thKey = "7a569c5d49064f81b96fcae919fa3c06"; $thSecret = "5a6167e78849444e8233e05c438f9de4"`{{execute}}
 
 
 ### Login using Infinity Portal API keys

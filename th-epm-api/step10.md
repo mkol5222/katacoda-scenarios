@@ -6,8 +6,8 @@ Infinity Portal AUTHORIZATION is based on JWT. JWT can be obtained via various A
 Introduce your API key as environment variables HEP_KEY and HEP_SECRET. Replace with your real keys.
 
 E.g.
-`export HEP_KEY=610335028c194dfdb8e2f98437a7b17c`{{execute}}
-`export HEP_SECRET=f1028f2b672d4338aa44c4ad09ccb94e`{{execute}}
+`export HEP_KEY=19d094473f0e444184ae9a6d0840549b`{{execute}}
+`export HEP_SECRET=e96473787bf54d97af13c3a053a9d669`{{execute}}
 
 
 ### Authenticate using login API call
