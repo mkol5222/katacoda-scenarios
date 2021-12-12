@@ -1,0 +1,20 @@
+{
+  "title": "AppSec demo",
+  "description": "demo vulerable apps behind NGINX proxy with Check Point AppSec",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1",
+      "text": "step1.md"
+    }
+  ]
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Ubuntu 18.04 Terminal with minikube.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
