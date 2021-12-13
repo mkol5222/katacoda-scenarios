@@ -15,7 +15,12 @@ Initiate scan
 `docker run -ti --rm -v $(pwd)/src:/src -v$(pwd):/out -e SG_CLIENT_ID=$SG_CLIENT_ID -e SG_SECRET_KEY=$SG_SECRET_KEY checkpoint/shiftleft 'shiftleft  code-scan -s /src --json > /out/scan.json'`{{execute}}
 
 Inspect scan.json
-`cat scan.json | grep ^\{ | jq . | head`{{execute}}
+
+`cat scan.json | jq . | less`{{execute}}
+
+Focus on vulnerabilities in dependencies
+
+`cat scan.json  | jq '.packages[0]."dependencies-tree" '`{{execute}}
 
 And visit Infinity Portal for SourceGuard report.
 

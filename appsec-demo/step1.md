@@ -6,11 +6,16 @@ Get the project
 `git clone https://github.com/mkol5222/appsec-demo.git`{{execute}}
 
 Set AppSec again TOKEN
+
 `export TOKEN=bring-your-own-token`{{execute}}
 
 Bootstrap it.
 
 `cd appsec-demo; docker-compose up -d`{{execute}}
+
+Check CP nano-agent status and policy
+
+`docker-compose exec agent-container cpnano --status`{{execute}}
 
 Try to reach app with attempt to inject using Log4Shell vulnerability...
 
