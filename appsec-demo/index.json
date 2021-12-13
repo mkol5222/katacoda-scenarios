@@ -5,8 +5,12 @@
   "time": "60 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1",
+      "title": "Step 1: AppSec",
       "text": "step1.md"
+    },
+    {
+      "title": "Step 2: SourceGuard",
+      "text": "step2.md"
     }
   ]
   },
