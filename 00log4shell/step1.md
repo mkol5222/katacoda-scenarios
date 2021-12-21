@@ -26,7 +26,7 @@ Install Powershell
 `cd`{{execute}}
 `snap install powershell --classic`{{execute}}
 
-Grap Check Point finder scrip (SK176951)
+Get Check Point finder scrip (SK176951)
 `curl -O https://gist.githubusercontent.com/chkp-mkoldov/7e2c0b0f156a3be44dfa9c3916a9c640/raw/65c64c80a6969f76a873b78942a06626321e1f32/log4shell_finders.ps1`{{execute}}
 
 Run checks

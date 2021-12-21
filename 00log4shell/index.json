@@ -5,7 +5,7 @@
   "time": "60 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1: all in log4shell_finders one demo",
+      "title": "Step 1: all in one log4shell_finders (SK176951) demo",
       "text": "step1.md"
     }
   ]
