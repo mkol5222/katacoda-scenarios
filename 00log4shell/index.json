@@ -1,0 +1,20 @@
+{
+  "title": "Check Point log4shell finders",
+  "description": "modified script to identify potential vulnerable apps/libs",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1: all in log4shell_finders one demo",
+      "text": "step1.md"
+    }
+  ]
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Ubuntu 18.04 Terminal with minikube.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
