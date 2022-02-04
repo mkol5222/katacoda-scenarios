@@ -14,4 +14,10 @@ Define DSN
 `export SPECTRAL_DSN=https://$SPK@get.spectralops.io`{{execute}}
 
 Scan
-`cd; cd r2; $HOME/.spectral/spectral scan --ok`
+`cd; cd r2; $HOME/.spectral/spectral scan --ok`{{execute}}
+
+Make more leaks
+`cd; cd r2; echo "const dbUri='mongodb://guru:vpyzamu@db1/mydata'" > db2.js; git add db2.js`{{execute}}
+
+Rescan
+`cd; cd r2; $HOME/.spectral/spectral scan --ok`{{execute}}
